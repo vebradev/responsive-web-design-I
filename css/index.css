@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Rebuilding project using mobile first approach. Lets go! */
+/* Mobile First FTW! */
 
 a {
     text-decoration: none;
@@ -98,7 +98,8 @@ nav .menu li a {
 }
 
 nav .menu li a:hover {
-    background-color: #f1f1f1;
+    background-color: #000;
+    color: #fff;
 }
 
 .hero {
@@ -158,4 +159,35 @@ footer {
 .copyright {
     margin: 30px 0 0 0;
     text-align: center;
+}
+
+@media (min-width: 800px) {
+    nav .menu {
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+    nav .menu li a {
+        padding: 10px 20px;
+    }
+    nav .menu li a, nav .menu li:last-child {
+        border: none;
+    }
+    .left {
+        margin: 50px 0 0 ;
+    }
+    .top, .bottom {
+        display: flex;
+    }
+    .top, .bottom {
+        margin: 35px 20px 15px 20px;
+    }
+    .bottom {
+        padding: 0 0 20px 0;
+    }
+    .top article, .bottom article {
+        padding: 0 10px;
+        margin: 0 0 25px 0;
+    }
 }
