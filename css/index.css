@@ -161,21 +161,23 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 800px) {
+/* Tablet */
+
+@media (min-width: 500px) {
     nav .menu {
-        padding: 0 40px;
+        padding: 0px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         font-size: 18px;
     }
     nav .menu li a {
-        padding: 10px 20px;
+        padding: 5px 8px;
     }
     nav .menu li a, nav .menu li:last-child {
         border: none;
     }
     .left {
-        margin: 50px 0 0 ;
+        margin: 50px 0 0;
     }
     .top, .bottom {
         display: flex;
@@ -189,5 +191,36 @@ footer {
     .top article, .bottom article {
         padding: 0 10px;
         margin: 0 0 25px 0;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    nav {
+        flex-direction: row;
+        margin: 20px 0 0 0;
+    }
+    nav .menu {
+        order: 0;
+        align-content: center;
+        margin: 0;
+        justify-content: flex-start;
+    }
+    nav .menu li {
+        margin: 0 10px;
+    }
+    .hero {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px 0 0 0;
+    }
+    .right {
+        display: block;
     }
 }
